@@ -26,5 +26,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
     windchillSpan.textContent = calculateWindChill(temperature, windSpeed);
 });
-
-});
