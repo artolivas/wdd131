@@ -25,4 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const windSpeed = 5;
 
     windchillSpan.textContent = calculateWindChill(temperature, windSpeed);
+
+    const weatherIcon = document.getElementById('weather-icon');
+    if (window.innerWidth > 500) {
+        weatherIcon.innerHTML = '🌤️';
+    }
 });

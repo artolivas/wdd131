@@ -50,7 +50,7 @@ main {
 }
 
 .weather {
-    top: 10%;
+    bottom: 10%;
     right: 5%;
     width: 30%;
 }
@@ -75,6 +75,20 @@ footer {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .overlay {
+        position: relative;
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .weather .icon {
+        background: url('Images/weather-clouds-icon.svg') no-repeat center center;
+        background-size: contain;
+        font-size: 0;
+    }
 }
 
 @media (min-width: 768px) {
