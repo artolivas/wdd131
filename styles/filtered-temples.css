@@ -1,0 +1,118 @@
+/* filtered-temples.css - Mobile First */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #4B0082;
+    color: #fff;
+    padding: 1.5rem 1rem; /* Adjust padding for larger header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    left: 1rem;
+}
+
+header.menu-open h1 {
+    display: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hamburger {
+    display: block;
+    font-size: 2rem; /* Increase font size for hamburger menu */
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 50%; /* Align vertically */
+    transform: translateY(-50%); /* Align vertically */
+}
+
+.nav-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-menu.show {
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0.5rem 0;
+}
+
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5rem; /* Increase font size for nav menu */
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 1rem;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.temple-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #4B0082;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Medium-sized devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+
+/* Large-sized devices (desktops) */
+@media (min-width: 1024px) {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+}
