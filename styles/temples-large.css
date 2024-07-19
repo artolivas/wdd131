@@ -6,15 +6,15 @@
 .nav-menu {
     display: flex !important;
     flex-direction: row;
-    justify-content: flex-end; /* Justify the menu to the right */
+    justify-content: flex-end;
     align-items: center;
-    width: 100%; /* Ensure the nav-menu takes the full width */
-    padding: 0 2rem; /* Add padding to the left and right */
-    gap: 2rem; /* Add gap between the menu items */
+    width: 100%;
+    padding: 0 2rem;
+    gap: 2rem;
 }
 
 .nav-menu li {
-    text-align: center; /* Center the text in each list item */
+    text-align: center;
 }
 
 main {
