@@ -16,4 +16,3 @@ document.addEventListener('DOMContentLoaded', () => {
     yearSpan.textContent = currentYear;
     lastModifiedSpan.textContent = lastModified;
 });
-

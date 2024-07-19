@@ -42,6 +42,10 @@ nav {
     display: none;
 }
 
+.nav-menu.show {
+    display: flex;
+}
+
 .nav-menu li {
     margin: 0.5rem 0;
 }
@@ -81,4 +85,12 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
+}
+
+/* Medium-sized devices (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
 }
