@@ -9,7 +9,7 @@ body {
 header {
     background-color: #4B0082;
     color: #fff;
-    padding: 1.5rem 1rem; /* Adjust padding for larger header */
+    padding: 2rem 1rem; /* Increase padding for larger header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,6 +102,25 @@ footer {
 }
 
 /* Medium-sized devices (tablets) */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    header h1 {
+        position: static;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
     .gallery {
         grid-template-columns: repeat(2, 1fr);
