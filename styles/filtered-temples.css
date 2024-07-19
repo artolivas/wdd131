@@ -9,7 +9,8 @@ body {
 header {
     background-color: #4B0082;
     color: #fff;
-    padding: 2rem 1rem; /* Increase padding for larger header */
+    padding: 2rem 1rem;
+    /* Increase padding for larger header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,15 +35,18 @@ nav {
 
 .hamburger {
     display: block;
-    font-size: 2rem; /* Increase font size for hamburger menu */
+    font-size: 2rem;
+    /* Increase font size for hamburger menu */
     background: none;
     border: none;
     color: #fff;
     cursor: pointer;
     position: absolute;
     right: 1rem;
-    top: 50%; /* Align vertically */
-    transform: translateY(-50%); /* Align vertically */
+    top: 50%;
+    /* Align vertically */
+    transform: translateY(-50%);
+    /* Align vertically */
 }
 
 .nav-menu {
@@ -65,7 +69,8 @@ nav {
 .nav-menu a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.5rem; /* Increase font size for nav menu */
+    font-size: 1.5rem;
+    /* Increase font size for nav menu */
 }
 
 .nav-menu a:hover {
