@@ -1,0 +1,33 @@
+body {
+    font-family: 'Neue Haas Grotesk Display Pro 45 Light', sans-serif;
+    background-color: #F4E0C7;
+    color: #273E22;
+}
+
+header {
+    background-color: #DB3D02;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'RIG Shaded Bold Face', sans-serif;
+}
+
+section {
+    margin: 2rem 1rem;
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 0.5rem 0;
+}
