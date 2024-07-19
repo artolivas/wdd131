@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review</title>
+    <link rel="stylesheet" href="styles/form-review.css">
+    <script defer src="scripts/temples.js"></script>
+</head>
+<body>
+    <h1>Product Review</h1>
+    <form id="reviewForm" method="get" action="review.html">
+        <div>
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+        </div>
+        <div>
+            <label>Overall Rating</label>
+            <div>
+                <input type="radio" id="star1" name="rating" value="1" required>
+                <label for="star1">☆</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5">☆☆☆☆☆</label>
+            </div>
+        </div>
+        <div>
+            <label for="installationDate">Date of Installation</label>
+            <input type="date" id="installationDate" name="installationDate" required>
+        </div>
+        <div>
+            <label>Which features did you find useful in the product? (Check all that apply)</label>
+            <div>
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
+                <input type="checkbox" id="easeOfUse" name="features" value="Ease of Use">
+                <label for="easeOfUse">Ease of Use</label>
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
+            </div>
+        </div>
+        <div>
+            <label for="writtenReview">Written Review (Optional)</label>
+            <textarea id="writtenReview" name="writtenReview"></textarea>
+        </div>
+        <div>
+            <label for="userName">Your Name (Optional)</label>
+            <input type="text" id="userName" name="userName">
+        </div>
+        <div>
+            <input type="submit" value="Post Review">
+        </div>
+    </form>
+    <footer>
+        <p>©2024 🌸 Rubia Magdelena Francesco 🌸 Madagascar</p>
+        <p>Last Modification: 02/26/2024 13:56:10</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
