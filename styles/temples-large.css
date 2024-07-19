@@ -27,6 +27,11 @@ main {
     gap: 1rem;
 }
 
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
 figure {
     margin: 0;
     padding: 0.5rem;
