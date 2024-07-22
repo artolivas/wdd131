@@ -1,0 +1,78 @@
+/* happy-siteplan.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FAFDF6;
+    color: #2D2A32;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #2D2A32;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #FAFDF6; /* Baby Powder */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+    color: #2D2A32;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p, ul, li {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    color: #2D2A32;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #2D2A32;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#color-schema ul, #typography ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#color-schema ul li, #typography ul li {
+    background-color: #FAFDF6;
+    border: 1px solid #2D2A32;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#color-schema ul li {
+    color: #DDD92A;
+}
