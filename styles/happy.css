@@ -78,7 +78,36 @@ p, ul, li, ol {
 
 footer {
     background-color: #2D2A32;
-    color: #FAFDF6; /* Baby Powder */
     text-align: center;
     padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    color: #EAE151; /* Maize */
+}
+
+.card {
+    background-color: #2D2A32;
+    color: #FAFDF6;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card h3 {
+    margin: 0;
+}
+
+.card p {
+    display: none;
+    text-align: left;
+}
+
+.card:hover {
+    transform: scale(1.05);
 }
