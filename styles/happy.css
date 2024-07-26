@@ -1,5 +1,6 @@
 /* happy.css */
 
+/* Base styles */
 body {
     font-family: Arial, sans-serif;
     background-color: #FAFDF6;
@@ -16,13 +17,21 @@ header {
     color: #FAFDF6; /* Baby Powder */
     padding: 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 header h1 {
     color: #FAFDF6; /* Baby Powder */
     margin: 0;
+    position: absolute;
+    left: 20px;
+}
+
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul {
@@ -30,6 +39,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
 }
 
 nav ul li {
@@ -43,6 +53,38 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.hero-banner {
+    position: relative;
+    height: 300px; /* Adjusted height */
+    text-align: left;
+    color: white; /* Set text color to white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px; /* Add padding to the left side */
+}
+
+.hero-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.hero-banner h2,
+.hero-banner p {
+    margin: 0;
+    padding: 0 20px;
+    z-index: 1;
 }
 
 .container {
@@ -88,6 +130,18 @@ footer p {
     color: #EAE151; /* Maize */
 }
 
+#information-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Add a gap between the cards */
+    flex-wrap: wrap; /* Ensure wrapping on smaller screens */
+}
+
 .card {
     background-color: #2D2A32;
     color: #FAFDF6;
@@ -97,17 +151,109 @@ footer p {
     cursor: pointer;
     text-align: center;
     transition: transform 0.3s;
+    width: calc(33.33% - 20px); /* Three columns with gap */
+    height: 200px; /* Adjust height to be equal to width for square shape */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
 }
 
 .card h3 {
     margin: 0;
+    word-wrap: break-word; /* Ensure h3 text wraps within the box */
+    color: #EAE151;
 }
 
 .card p {
     display: none;
     text-align: left;
+    margin-top: 20px;
+    color: #FAFDF6;
 }
 
 .card:hover {
     transform: scale(1.05);
+}
+
+/* Two-column layout for the Importance section */
+.two-column {
+    display: flex;
+    gap: 20px; /* Add some space between the columns */
+}
+
+.column {
+    flex: 1;
+}
+
+.column img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops) */
+@media (min-width: 992px) {
+    .card {
+        width: calc(30% - 20px); /* Adjust width for larger screens */
+    }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .card {
+        width: calc(45% - 20px); /* Adjust width for tablets */
+        height: calc(45% - 20px); /* Keep square shape */
+    }
+
+    .two-column {
+        flex-direction: column; /* Stack columns vertically on medium screens */
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 767px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        display: none; /* Hide the nav elements */
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        margin-left: auto;
+        color: #FAFDF6; /* Baby Powder */
+    }
+
+    .menu-icon:hover {
+        color: #EAE151; /* Maize */
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .card {
+        width: calc(100% - 20px); /* Full width for phones */
+        height: auto; /* Adjust height for phones */
+    }
+
+    .two-column {
+        flex-direction: column; /* Stack columns vertically on small screens */
+    }
 }

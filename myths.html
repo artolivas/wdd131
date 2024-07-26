@@ -10,6 +10,7 @@
 <body>
     <header>
         <h1>Happiness Corner</h1>
+        <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
         <nav>
             <ul>
                 <li><a href="happy.html">Home</a></li>
@@ -36,17 +37,19 @@
             </section>
             <section id="information-cards">
                 <h2>Myth vs. Reality</h2>
-                <div class="card">
-                    <h3>Myth: Circumstances are the Key to Happiness</h3>
-                    <p>While it's easy to assume that our external situations, such as wealth and status, are the main contributors to our happiness, research shows that these factors have the smallest impact once our basic needs are met.</p>
-                </div>
-                <div class="card">
-                    <h3>Myth: Changing Circumstances Leads to Happiness</h3>
-                    <p>People often believe that altering their circumstances will significantly enhance their happiness. However, studies indicate that changing our behaviors has a much greater effect on our well-being than changing our circumstances.</p>
-                </div>
-                <div class="card">
-                    <h3>Myth: Happiness Comes from Achieving Milestones</h3>
-                    <p>It's a common misconception that reaching certain milestones or acquiring material goods will bring lasting happiness. True happiness stems from habits like spending time with loved ones, practicing gratitude, staying optimistic, being physically active, and enjoying life's moments.</p>
+                <div class="cards-container">
+                    <div class="card">
+                        <h3>Myth #1: Circumstances are the Key to Happiness</h3>
+                        <p>While it's easy to assume that our external situations, such as wealth and status, are the main contributors to our happiness, research shows that these factors have the smallest impact once our basic needs are met.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Myth #2: Changing Circumstances Leads to Happiness</h3>
+                        <p>People often believe that altering their circumstances will significantly enhance their happiness. However, studies indicate that changing our behaviors has a much greater effect on our well-being than changing our circumstances.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Myth:#3 Happiness Comes from Achieving Milestones</h3>
+                        <p>It's a common misconception that reaching certain milestones or acquiring material goods will bring lasting happiness. True happiness stems from habits like spending time with loved ones, practicing gratitude, staying optimistic, being physically active, and enjoying life's moments.</p>
+                    </div>
                 </div>
             </section>
         </main>
@@ -54,5 +57,11 @@
     <footer>
         <p>&copy; 2024 Happiness Corner</p>
     </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav ul');
+            nav.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
